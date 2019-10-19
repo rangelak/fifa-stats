@@ -1,0 +1,145 @@
+
+/* ADD YOUR STYLES HERE */
+
+
+/****************/
+/*  LINE CHART  */
+/****************/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 11px;
+}
+
+.line {
+  fill: none;
+  stroke: #1C9A3D;
+  stroke-width: 1.5px;
+}
+
+.tooltip-circle {
+  fill: #96AB96;
+}
+
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* ************  DEFAULT STYLES ************ */
+
+/****************
+  ** FONTS **
+  > Roboto condensed
+  > Montserrat
+  > Lato
+*****************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+/****************/
+/*   STATS      */
+/****************/
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: Lato, sans-serif;
+    color: gray;
+}
+
+.headline-3 {
+    font-family: Roboto Condensed, sans-serif !important;
+    font-size: 20px;
+}
+
+p.charttext {
+    font-family: Lato, sans-serif;
+}
+
+/* footer at bottom */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin:0;
+}
+
+main{
+  flex: 1;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+}
+
+
+.headline-row{
+  background-size: 100% auto;
+  background-image: url('../img/refugee_bw.jpg');
+}
+.headline-row h1{
+  color: white !important;
+  background-color: black;
+}
+.chart-label{
+  font-family: Lato, sans-serif;
+  font-size: 8pt;
+  fill: #dc143c;
+}
+.graph-title{
+  font-family: Montserrat, 700;
+  font-size: 12pt;
+  fill: #8c8c8c;
+}
+.y1{
+  font-size: 10pt;
+  font-family: Lato;
+}

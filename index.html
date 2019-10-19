@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rangel Milushev | CS171 - HW 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container mt-5 mb-5">
+            <div class="headline">
+                <h1>FIFA World Cup<sup>TM</sup></h1>
+                <h2>All Time Statistics</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-8"><input type="text" class="js-range-slider" value=""></div>
+                <div class="col-md-4 text-right">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="chart-select">Chart Data</label>
+                            <select class="form-control" id="chart-select" onchange="onSelect()">
+                                <option value="AVERAGE_ATTENDANCE">Average Attendance</option>
+                                <option value="AVERAGE_GOALS">Average Goals</option>
+                                <option value="GOALS" selected="selected">Goals</option>
+                                <option value="MATCHES">Matches</option>
+                                <option value="TEAMS">Teams</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <!-- Parent container for the visualization -->
+                <div class="col-md-8" id="chart-area"></div>
+                <div class="col-md-4" id="information"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container pb-3 pt-4 text-center">
+            <p>cs171 homework 5. Rangel Milushev</p>
+        </div>
+    </footer>
+    <!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- Your implementation -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
